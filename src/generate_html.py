@@ -47,14 +47,17 @@ def generate_packages_list(package, root_image_path=""):
 
 def generate_home_page_html(packages_html, cheapest_packages_list, by_destination_packages, main_page_structured_data):
     template = env.get_template('home_page.template.j2')
+    last_update_date = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
     return template.render(packages_html=packages_html, cheapest_packages_list=cheapest_packages_list,
                            by_destination_packages=by_destination_packages,
-                           main_page_structured_data=main_page_structured_data)
+                           main_page_structured_data=main_page_structured_data,
+                           last_update_date=last_update_date)
 
 
 def generate_voyages_page_html(packages_html, main_page_structured_data):
     template = env.get_template('voyages_page.template.j2')
-    return template.render(packages_html=packages_html, main_page_structured_data=main_page_structured_data)
+    last_update_date = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
+    return template.render(packages_html=packages_html, main_page_structured_data=main_page_structured_data, last_update_date=last_update_date)
 
 
 def generate_structured_data(package, url):
@@ -65,8 +68,10 @@ def generate_structured_data(package, url):
 
 def generate_details_page_html(package, url, structured_data, similar_packages_list):
     template = env.get_template('details_page.template.j2')
+    last_update_date = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
     return template.render(package=package, url=url, similar_packages_list=similar_packages_list,
-                           product_structured_data=structured_data)
+                           product_structured_data=structured_data,
+                           last_update_date=last_update_date)
 
 
 def create_page_url(package):
