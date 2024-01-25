@@ -1,0 +1,19 @@
+<div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-l transition-transform duration-200 ease-in-out hover:-translate-y-1"
+     data-id="{{ package.id }}">
+    <img src="{{ root_image_path }}{{ package.source_logo }}" alt="Logo"
+         style="opacity:0.6; position: absolute; bottom: 4px; right: 4px; height: 20px; width: auto; z-index: 20;"/>
+    <a class="absolute inset-0 z-10" data-id="{{ package.id }}" {{ link | safe }} rel="ugc">
+        <span class="sr-only" data-id="{{ package.id }}">{{ package.title }}</span>
+    </a>
+    <img src="{{ root_image_path }}images/{{ package.project_id }}/{{ package.thumbnail }}" alt="{{ package.title }}" width="500"
+         height="400" class="object-cover w-full h-64" data-id="{{ package.id }}"
+         style="aspect-ratio: 500 / 400; object-fit: cover;">
+    <div class="bg-white p-4" style="padding-bottom:1.5em" data-id="{{ package.id }}">
+        <h4 class="font-bold" data-id="{{ package.id }}">{{ package.title }} - {{ package.destination }}</h4>
+        <p class="text-sm text-gray-500" data-id="{{ package.id }}">{{ package.short_description }}</p>
+        <div class="price-container"
+             style="position: absolute; top: 6px; right: 6px; background-color: white; border: 1px solid #e5e7eb; padding: 2px; border-radius: 4px;">
+            <h5 class="font-semibold" data-id="{{ package.id }}">{{ price_formatted }}</h5>
+        </div>
+    </div>
+</div>

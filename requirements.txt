@@ -1,0 +1,6 @@
+beautifulsoup4==4.12.3
+htmlmin==0.1.12
+langdetect==1.0.9
+pillow==10.2.0
+requests==2.31.0
+Jinja2==3.1.3

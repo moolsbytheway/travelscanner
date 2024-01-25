@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Voyages organisés Maroc | TravelScanner</title>
+    <meta name="author" content="TravelScanner">
+    <meta name="copyright" content="TravelScanner">
+    <meta name="robots" content="index, follow">
+     <script type="application/ld+json">
+       {"@context":"http://schema.org/","@type":"TravelAgency","name":"Voyages organisés au Maroc|TravelScanner","image":"https://www.voyagesorganisemaroc.com/logos/bg.webp","priceRange":"800 MAD","url":"https://www.voyagesorganisemaroc.com","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"Casablanca","addressRegion":"","addressCountry":"Morocco"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"00:00","closes":"23:59"}]}
+    </script>
+    {{ main_page_structured_data | safe }}
+
+    <link rel="icon" type="image/webp" href="/favicon.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-language" content="en">
+    <meta property="og:type" content="website">
+
+    <meta name="description"
+          content="Voyages organisés au Maroc. Join us for unforgettable adventures in Morocco with our tailor-made tours. Explore the beauty of Toubkal, Akchour, Ait Bouguemez, and more.">
+    <meta name="keywords"
+          content="Voyage organisé, Voyage organisé maroc, travel morocco, travel, voyage, Tours organisés, Maroc, Trekking, Rafting, Spéléologie, Voyage d'aventure, Toubkal, Akchour, Ait Bouguemez, Istanbul, Bali, Dubaï, Andalousie, Prague, Budapest, Vienne, Forfaits de voyage, Destinations internationales">
+
+    <link rel="canonical" href="https://www.voyagesorganisemaroc.com/">
+    <meta property="og:site_name" content="Voyages organisés Maroc">
+
+    <meta property="og:title" content="Voyages organisés Maroc | TravelScanner">
+    <meta property="og:description"
+          content="Voyages organisés au Maroc. Travel with for unforgettable adventures in Morocco with our tailor-made tours. Explore the beauty of Toubkal, Akchour, Ait Bouguemez, and more.">
+    <meta property="og:image" content="https://www.voyagesorganisemaroc.com/logos/bg.webp">
+    <meta property="og:url" content="https://www.voyagesorganisemaroc.com/">
+
+    <meta property="twitter:title" content="Voyages organisés Maroc | TravelScanner">
+    <meta property="twitter:description"
+          content="Voyages organisés au Maroc. Travel with for unforgettable adventures in Morocco with our tailor-made tours. Explore the beauty of Toubkal, Akchour, Ait Bouguemez, and more.">
+    <meta property="twitter:image" content="https://www.voyagesorganisemaroc.com/logos/bg.webp">
+    <meta property="twitter:card" content="https://www.voyagesorganisemaroc.com/logos/bg.webp">
+    <meta property="twitter:url" content="https://www.voyagesorganisemaroc.com/">
+    <meta property="facebook:title" content="Voyages organisés Maroc | TravelScanner">
+    <meta property="facebook:description"
+          content="Voyages organisés au Maroc. Travel with for unforgettable adventures in Morocco with our tailor-made tours. Explore the beauty of Toubkal, Akchour, Ait Bouguemez, and more.">
+    <meta property="facebook:image" content="https://www.voyagesorganisemaroc.com/logos/bg.webp">
+    <meta property="facebook:card" content="https://www.voyagesorganisemaroc.com/logos/bg.webp">
+    <meta property="facebook:url" content="https://www.voyagesorganisemaroc.com/">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="flex flex-col min-h-screen">
+
+    <header class="relative h-[500px]"><img src="logos/bg.webp" alt="Discover Your Next Adventure"
+                                            class="absolute inset-0 object-cover w-full" width="1200" height="600"
+                                            style="height:510px; aspect-ratio: 1200 / 600; object-fit: cover;">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white">
+            <h1 style="text-shadow: 0 2px #00000073" class="text-4xl font-bold sm:text-5xl md:text-6xl">
+                Discover Your Next Adventure
+            </h1>
+            <p class="mt-4 text-lg sm:text-xl md:text-2xl">
+                Explore the world's most beautiful places with us
+            </p><a
+                class="mt-8 inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white rounded-md shadow hover:bg-gray-100"
+                href="voyages.html">
+            Explore destinations
+        </a></div>
+    </header>
+    <main class="flex-1 py-12 bg-white">
+        <div class="container px-4 mx-auto">
+            <h2 class="py-2 text-3xl font-bold text-center sm:text-4xl">
+                Cheapest Destinations
+            </h2></div>
+        <div
+                style="margin-left: auto;margin-right: auto;max-width: 1100px;"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-6">
+            {{ cheapest_packages_list | safe }}
+
+        </div>
+        {{ by_destination_packages | safe }}
+        <div style="margin-top: 1em; margin-bottom: 3em"
+             class="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white">
+            <a class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+               href="voyages.html">
+                Show more destinations
+            </a>
+        </div>
+    </main>
+
+    <footer class="flex items-center justify-center h-20 bg-gray-800 text-white">
+        <div class="flex items-center space-x-8">
+            <a class="text-lg font-medium" href="mailto:contact@voyagesorganisemaroc.com">
+                Contact Us
+            </a>
+        </div>
+    </footer>
+</div>
+
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-Z5Q0J142KK"></script>
+<script async defer src="google-tag.js"></script>
+<script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7826205063142570"
+        crossorigin="anonymous"></script>
+</body>
+</html>
